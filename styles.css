@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  position: relative;
 }
 body {
   font-size: 20px;
@@ -9,6 +10,10 @@ body {
   margin: 0px;
   background-color: white;
 }
+nav.navbar-fixed-top {
+  position:fixed;
+  top:0;
+}
 header {
 	margin: 0;
 	padding: 0;
@@ -16,6 +21,11 @@ header {
   background-color: grey;
 
 }
+.navbar {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 20px;
+  }
 nav.navbar {
   background-color: grey !important;
   border-radius: 0;
@@ -34,7 +44,7 @@ div.row {
   height: auto;
   padding: 15px;
   width: 100%
-  margin-top: 0px;
+  margin-top: 50px;
   font-color: white;
   font-size: 1em;
 }

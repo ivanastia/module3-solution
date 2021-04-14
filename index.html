@@ -18,13 +18,12 @@
 
     <a id="company-name" class="navbar-brand" href="#">FOOD, LLC</a>
     <div class="dropdown">
-     <button onclick="myFunction()" type="button" class="btn btn-primary dropdown-toggle visible-xs data-toggle="dropdown">
-  <span class="glyphicon glyphicon-nav" aria-hidden="true"></span>
+     <button type="button" id="dlabel" class="btn btn-primary dropdown-toggle visible-xs"  data-toggle="dropdown">
+  <span role="button" class="glyphicon glyphicon-nav" aria-haspopup="true" aria-expanded="true"></span>
 </button>
   </div>
-  <div id="myDropdown" class="dropdown-content">
-      <ul id="nav-list" class="dropdown-menu visible-xs">
-          <li data-toggle="collapse" data-target=".nav-collapse"><a id="drop" href="#chicken">
+          <ul class="dropdown-menu"  role="menu" aria-labelledby="dlabel">
+            <li data-toggle="collapse" data-target=".nav-collapse"><a id="drop" href="#chicken">
           <span>Chicken</span><br></a>
         </li>
       <li data-toggle="collapse" data-target=".nav-collapse"><a id="drop" href="#beef">
@@ -32,9 +31,8 @@
         </li>
        <li data-toggle="collapse" data-target=".nav-collapse"><a id="drop" href="#sushi">
             <span>Sushi</span><br></a>
-        </li>
-      </ul>
-    </div>
+            <li role="separator" class="divider"></li>
+          </ul>
     </div>
     </nav>
 </header>
@@ -89,6 +87,8 @@ Sushi is sometimes confused with sashimi, a related dish in Japanese cuisine tha
    
 
   <!-- jQuery (Bootstrap JS plugins depend on it) -->
+
+  
    <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
