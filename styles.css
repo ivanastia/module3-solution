@@ -23,6 +23,10 @@ nav.navbar {
   width: 100%
   margin-top: 0px;
 }
+
+div.container-fluid{
+  position: relative;
+}
 div.row {
 
   border-radius: 0;
@@ -52,12 +56,12 @@ div.row {
 
 #company-name  { /* Restaurant name */
   color: white;
-  font-size: 5vw;
+  font-size: 7vw;
   text-transform: uppercase;
   font-weight: bold;
   text-shadow: 1px 1px 1px #222;
-  margin: 20px;
-  padding: 20px;
+  margin: 15px;
+  padding: 15px;
 }
 
 button.btn {
@@ -65,9 +69,14 @@ button.btn {
   margin-right: 0px;
   margin-top: 20px;
   float: right;
+  background-color: grey;
+  border-color: black;
   
 }
 
+button.btn:hover {
+  background-color: white;
+}
 .glyphicon-nav {
   width: 18px;
   padding: 8px 0;
@@ -100,6 +109,9 @@ button.btn {
 }
 #nav-list {
   margin-top: 10px;
+  float: center;
+  width: 100%;
+  clear: both;
 }
 #nav-list a {
   color: black;
@@ -108,7 +120,7 @@ button.btn {
   font-color: black;
 }
 #nav-list a:hover {
-  background: #E7E7E7;
+  background: grey;
 }
 #nav-list a span {
   font-size: 1.8em;}
@@ -117,13 +129,13 @@ button.btn {
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
   border: 1px solid #61122f;
  float: right;
-
+background-color: grey;
 
 
 }
 .navbar-header button.navbar-toggle {
   clear: both;
-  
+  background-color: grey;
 }
 
 .navbar-brand {
@@ -135,7 +147,7 @@ button.btn {
     font-size: 5vw; /* 1vw = 1% of viewport width */
   }
 
-div #collapsable-nav {
+div #dropdown {
  clear: both;
 background: white;
 font-color: black;
@@ -316,7 +328,7 @@ float: left;
   }
   .navbar-brand h1 { /* Restaurant name */
     padding-top: 10px;
-    font-size: 5vw; /* 1vw = 1% of viewport width */ }
+    font-size: 10vw; /* 1vw = 1% of viewport width */ }
 
      #collapsable-nav a { /* Collapsed nav menu text */
     font-size: 1.2em;
@@ -330,7 +342,20 @@ float: left;
     font-color: black;
   }
 
-  
+  a#drop {
+    background-color: white;
+    font-weight: bold;
+    text-align: left;
+    border: solid black 1px;
+    text-align: center;
+
+    
+
+  }
+
+   a:hover {
+    background-color: grey;
+   }
 
   .col-xs-1 {
     width: 8.33%;

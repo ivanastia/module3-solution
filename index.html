@@ -18,44 +18,45 @@
 
     <a id="company-name" class="navbar-brand" href="#">FOOD, LLC</a>
     <div class="dropdown">
-     <button type="button" class="btn btn-default btn-lg visible-xs">
+     <button onclick="myFunction()" type="button" class="btn btn-primary dropdown-toggle visible-xs data-toggle="dropdown">
   <span class="glyphicon glyphicon-nav" aria-hidden="true"></span>
 </button>
-   </div>
   </div>
-   <div class="collapse navbar-collapse visible-xs hidden-sm hidden-md" id="collapsable-nav">
-      <ul id="nav-list" class="nav navbar-nav navbar-right visible-xs">
-          <li data-toggle="collapse" data-target=".nav-collapse"><a href="#Chicken">
+  <div id="myDropdown" class="dropdown-content">
+      <ul id="nav-list" class="dropdown-menu visible-xs">
+          <li data-toggle="collapse" data-target=".nav-collapse"><a id="drop" href="#chicken">
           <span>Chicken</span><br></a>
         </li>
-      <li data-toggle="collapse" data-target=".nav-collapse"><a href="#Beef">
+      <li data-toggle="collapse" data-target=".nav-collapse"><a id="drop" href="#beef">
             <span>Beef</span><br></a>
         </li>
-       <li data-toggle="collapse" data-target=".nav-collapse"><a href="#Sushi">
+       <li data-toggle="collapse" data-target=".nav-collapse"><a id="drop" href="#sushi">
             <span>Sushi</span><br></a>
         </li>
       </ul>
-
+    </div>
     </div>
     </nav>
 </header>
-
 
   <div id="menu-grid" class="container">
 <p class="text-center"><h2>Our Menu</h2></p>
     <div class="row">
       <div id="chicken" class="col-md-4 col-sm-6 col-xs-12">
-  		<h3 id="chicken">Chicken</h3>
-  	<section>These Chinese Dinner Recipes are just what you need when you're craving something delicious and don't feel like leaving the house to go and get take out!
+      <h3 id="chicken">Chicken</h3>
+    <section>These Chinese Dinner Recipes are just what you need when you're craving something delicious and don't feel like leaving the house to go and get take out!
 
 There are so many different types of Chinese food that you can make at home, and the hardest part is choosing which ones to try! If you're wanting to make Chinese food at home, you can choose from dishes with chicken, beef, seafood, and even vegetarian options!
 Traditional Chinese food may seem intimidating to make, but there are so many delicious easy Chinese dinner recipes out there that once you try some, you'll never want to order takeout again! The best part about making your own Chinese takeaway recipes is you can customize them just how you like! If you like things more spicy or on the sweeter side, you can adjust the ingredients to meet your tastes.
 
-If you and your family love Chinese restaurant recipes but are tired of spending a fortune on dinner each night, then these recipes are for you! With budget friendly and low carb recipes, feed your whole family for only a fraction of the price!</section>
+If you and your family love Chinese restaurant recipes but are tired of spending a fortune on dinner each night, then these recipes are for you! With budget friendly and low carb recipes, feed your whole family for only a fraction of the price! <br>
+<a href="#company-name" class="visible-xs">
+            <span id="back-top">Back to the Top</span><br></a>
+            </section>
       </div>
       <div id="beef" class="col-md-4 col-sm-6 col-xs-12">
-  		<h3 id="beef">Beef</h3>
-  	 <section>BEEF RECIPES
+      <h3 id="beef">Beef</h3>
+     <section>BEEF RECIPES
 Need to eat in a hurry? Try these amazing Easy Beef Dinner Recipes for lunch, dinner, and all occasions. They are delicious and so easy to make too!
 
 From easy to make Cheeseburger Casserole, to our favorite recipe for an Egg Roll in a Bowl, we have just what you are looking for.
@@ -65,24 +66,30 @@ If you're looking to recreate a dish that your grandmother used to make for you,
 
 Goulash is known as a quick and easy dish to create and it really is, especially when you use a ground meat, tomato sauce, and pasta combinations. However, if you want to fix a more traditional Hungarian goulash recipe with chunks of beef, plan on at least a couple of hours of simmering for tender meat. It is still a simple meal to prepare, but unfortunately you can’t get the old fashioned goulash recipe on the table within 30 minutes!
 
-Most goulash recipes call for stovetop cooking of the ingredients but anyone with a crock pot knows how wonderful they are for cooking any kind of stew. If you don’t want to or can’t keep an eye on the stove, using a crock pot is a great way to tenderize the meat. Slow cooker goulash recipes have a lot of flavor without all the hassle of watching a pan.</section>
+Most goulash recipes call for stovetop cooking of the ingredients but anyone with a crock pot knows how wonderful they are for cooking any kind of stew. If you don’t want to or can’t keep an eye on the stove, using a crock pot is a great way to tenderize the meat. Slow cooker goulash recipes have a lot of flavor without all the hassle of watching a pan.<br>
+<a href="#company-name" class="visible-xs">
+            <span id="back-top">Back to the Top</span><br></a>
+            </section>
       </div>
          <div id="sushi" class="col-md-4 col-sm-12 col-xs-12">
-  	<h3 id="sushi">Sushi</h3>
-  	<section>Sushi (すし, 寿司, 鮨, pronounced [sɯɕiꜜ] or [sɯꜜɕi]) is a traditional Japanese dish of prepared vinegared rice (鮨飯, sushi-meshi), usually with some sugar and salt, accompanying a variety of ingredients (ネタ, neta), such as seafood, often raw, and vegetables. Styles of sushi and its presentation vary widely, but the one key ingredient is "sushi rice", also referred to as shari (しゃり), or sumeshi (酢飯).[1]
+    <h3 id="sushi">Sushi</h3>
+    <section>Sushi (すし, 寿司, 鮨, pronounced [sɯɕiꜜ] or [sɯꜜɕi]) is a traditional Japanese dish of prepared vinegared rice (鮨飯, sushi-meshi), usually with some sugar and salt, accompanying a variety of ingredients (ネタ, neta), such as seafood, often raw, and vegetables. Styles of sushi and its presentation vary widely, but the one key ingredient is "sushi rice", also referred to as shari (しゃり), or sumeshi (酢飯).[1]
 
 Sushi is traditionally made with medium-grain white rice, though it can be prepared with brown rice or short-grain rice. It is very often prepared with seafood, such as squid, eel, yellowtail, salmon, tuna or imitation crab meat. Many types of sushi are vegetarian. It is often served with pickled ginger (gari), wasabi, and soy sauce. Daikon radish or pickled daikon (takuan) are popular garnishes for the dish.
 
-Sushi is sometimes confused with sashimi, a related dish in Japanese cuisine that consists of thinly sliced raw fish, or occasionally meat, and an optional serving of rice.</section>
+Sushi is sometimes confused with sashimi, a related dish in Japanese cuisine that consists of thinly sliced raw fish, or occasionally meat, and an optional serving of rice.<br>
+<a href="#company-name" class="visible-xs">
+            <span id="back-top">Back to the Top</span><br></a>
+            </section>
          </div>
        </div> 
       </div>  
+
      
    
 
   <!-- jQuery (Bootstrap JS plugins depend on it) -->
-  <script src="js/jquery-1.11.3.min.js"></script>
+   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
-</body>
 </html>
