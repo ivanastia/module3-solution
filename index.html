@@ -18,11 +18,12 @@
 
     <a id="company-name" class="navbar-brand" href="#">FOOD, LLC</a>
     <div class="dropdown">
-     <button type="button" id="dlabel" class="btn btn-primary dropdown-toggle visible-xs"  data-toggle="dropdown">
-  <span role="button" class="glyphicon glyphicon-nav" aria-haspopup="true" aria-expanded="true"></span>
+     <button type="button" id="dlabel" class="btn btn-primary dropdown-toggle visible-xs"  data-target=".dropdown-menu" data-toggle="dropdown">
+  <span role="button" class="glyphicon glyphicon-nav" aria-haspopup="false" aria-expanded="true"></span>
 </button>
   </div>
-          <ul class="dropdown-menu"  role="menu" aria-labelledby="dlabel">
+          <div class="collapse dropdown-menu">
+          <ul id="nav-list" class="dropdown-menu"  role="menu" aria-labelledby="dlabel">
             <li data-toggle="collapse" data-target=".nav-collapse"><a id="drop" href="#chicken">
           <span>Chicken</span><br></a>
         </li>
@@ -30,9 +31,11 @@
             <span>Beef</span><br></a>
         </li>
        <li data-toggle="collapse" data-target=".nav-collapse"><a id="drop" href="#sushi">
-            <span>Sushi</span><br></a>
+            <span>Sushi</span><br></a> 
+          </li>
             <li role="separator" class="divider"></li>
           </ul>
+          </div>
     </div>
     </nav>
 </header>
@@ -90,6 +93,7 @@ Sushi is sometimes confused with sashimi, a related dish in Japanese cuisine tha
 
   
   <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/script.js"></script>
+  <script src="bootstrap-3.4.1-dist/js/bootstrap.js"></script>
+  <script src="bootstrap-3.4.1-dist/js/script.js"></script>
+</body>
 </html>
