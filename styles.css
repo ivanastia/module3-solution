@@ -10,21 +10,17 @@ body {
   margin: 0px;
   background-color: white;
 }
-nav.navbar-fixed-top {
+nav.navbar {
   position:fixed;
   top:0;
 }
-header {
-	margin: 0;
-	padding: 0;
-	width: 100%;
-  background-color: grey;
 
-}
+
 .navbar {
   position: relative;
-  min-height: 50px;
+height: auto;
   margin-bottom: 20px;
+  width: 100%;
   }
 nav.navbar {
   background-color: grey !important;
@@ -32,11 +28,16 @@ nav.navbar {
   border: 0;
   width: 100%
   margin-top: 0px;
+  position: static;
 }
 
 div.container-fluid{
   position: relative;
+  margin: 0px;
+  padding: 0px;
+  display: block;
 }
+
 div.row {
 
   border-radius: 0;
@@ -50,22 +51,22 @@ div.row {
 }
 
 /** HEADER **/
-#header-navbar {
+
+div.havbar-header{
+  width: 100%;
+  padding: 15px;
   background-color: grey;
   border-radius: 0;
   border: 0;
-  height: auto;
-  padding: 15px;
-  width: 100%
+  height: 50px;
+  margin: 15px;
 
 }
 
 .navbar-brand {
-  padding-top: 25px;
-}
-
-#company-name  { /* Restaurant name */
-  color: white;
+  padding: 15px;
+  margin: 15px;
+    color: white;
   font-size: 7vw;
   text-transform: uppercase;
   font-weight: bold;
@@ -74,114 +75,81 @@ div.row {
   padding: 15px;
 }
 
-button.btn {
-  padding: 10px;
-  margin-right: 0px;
-  margin-top: 20px;
-  float: right;
-  background-color: grey;
-  border-color: black;
-  
-}
-
-button.btn:hover {
-  background-color: white;
-}
-.glyphicon-nav {
-  width: 18px;
-  padding: 8px 0;
-  position: relative;
-  display: inline-block;
-}
-.glyphicon-nav:before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-  top: 0px;
-}
-.glyphicon-nav:after {
-  content: '';
-  position: absolute;
-  top: 7px;
-  left: 0px;
-  height: 2px;
-  width: 100%;
-  background: black;
-}
-
-.navbar-brand a:hover, .navbar-brand a:focus {
-  text-decoration: none;
-
-}
-#nav-list {
-  margin-top: 10px;
-  float: center;
-  width: 100%;
-  clear: both;
-}
-#nav-list a {
-  color: black;
-  text-align: center;
-  background: white;
-  font-color: black;
-}
-#nav-list a:hover {
-  background: grey;
-}
-#nav-list a span {
-  font-size: 1.8em;}
-
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 1px solid #61122f;
- float: right;
+  border: 1px solid black;
 background-color: grey;
 
+
+}
+span.icon-bar {
+  align-content: center;
+}
+
+a.navbar-brand {
 
 }
 .navbar-header button.navbar-toggle {
   clear: both;
   background-color: grey;
+  border: 2px solid black;
+  margin-right: 25px;
+  position: relative;
+  float: right;
+  text-rendering: auto;
+  word-spacing: normal;
+  display: inline-block;
+  text-align: center;
+  align-items: flex-start;
+
 }
 
-.navbar-brand {
-    padding-top: 10px;
-    height: Auto;
-  }
+
   .navbar-brand h1 { /* Restaurant name */
     padding-top: 10px;
-    font-size: 5vw; /* 1vw = 1% of viewport width */
+    font-size: 5vw; 
+    height: Auto;/* 1vw = 1% of viewport width */
   }
 
-div #dropdown {
+div #myNavbar{
  clear: both;
-background: white;
+background: grey;
 font-color: black;
-padding: 10px;
+margin-bottom: 0px;
+padding: 0px;
+}
+
+a.menu-item{
+  border: 1px solid black;
+  text-align: center;
+  color: black;
+
+}
+div.container-main {
+  margin-top: 0px;
+  padding: 0px;
+  height: 0px;
 }
 
 
-    
-  
-
-h2 {
-background color: grey;
-color: black;
-text-transform: uppercase;
- font-size: 1.6em;
- text-align: center;
-}
-div.container {
+div#menu-grid.container {
   position: relative;
   margin-left: 0px;
   margin-right: 0px;
-  padding: 0px;
+  margin-top: 15px;
+  padding: 15px;
   width: 100%;
 }
+
+h2#main-title.text-center {
+background color: white;
+color: black !important;
+text-transform: uppercase;
+ font-size: 1.6em;
+ text-align: center;
+ position: relative;
+}
+
 div.row {
 	color: black;
 	margin: 0px;
@@ -332,40 +300,7 @@ float: left;
 @media (max-width: 767px) {
   .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
 
- } .navbar-brand {
-    padding-top: 10px;
-    height: 80px;
-  }
-  .navbar-brand h1 { /* Restaurant name */
-    padding-top: 10px;
-    font-size: 10vw; /* 1vw = 1% of viewport width */ }
-
-     #collapsable-nav a { /* Collapsed nav menu text */
-    font-size: 1.2em;
- background color: white;
-    border: black solid 1px;
-    
-  }
-  #collapsable-nav a span { /* Collapsed nav menu glyph */
-    font-size: 1em;
-    margin-right: 5px;
-    font-color: black;
-  }
-
-  a#drop {
-    background-color: white;
-    font-weight: bold;
-    text-align: left;
-    border: solid black 1px;
-    text-align: center;
-
-    
-
-  }
-
-   a:hover {
-    background-color: grey;
-   }
+ } 
 
   .col-xs-1 {
     width: 8.33%;
